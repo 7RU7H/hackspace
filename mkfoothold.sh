@@ -2,7 +2,7 @@
 # Foothold.sh is nice workspace script to clone all binaries, enumeration scripts, frameworks and post-exploitation scripts
 
 mkdir Foothold/ ; cd Foothold/
-mkdir Windows && mkdir Linux
+mkdir Windows && mkdir Linux && mkdir Bloodhound
 mkdir Linux/Binaries && mkdir Linux/Enumeration && mkdir Linux/Exploits && mkdir Linux/Frameworks && mkdir Linux/Post-Exploitation
 mkdir Windows/Binaries && mkdir Windows/Enumeration && mkdir Windows/Exploits && mkdir Windows/Frameworks && mkdir Windows/Post-Exploitation && mkdir Windows/Sysinternals
 echo -e "\e[31mCloning PEASS-NG Started\e[0m"
@@ -77,3 +77,8 @@ echo -e "\e[31mDownloading Sysinterals\e[0m"
 curl -L https://download.sysinternals.com/files/SysinternalsSuite.zip > SysinternalsSuite.zip
 wait
 echo -e "\e[31mSysinterals Download Complete\e[0m"
+cd ../../Bloodhound;
+echo -e "\e[31mDownloading Sharphound for Bloodhound\e[0m"
+curl -L https://github.com/BloodHoundAD/BloodHound/raw/master/Collectors/SharpHound.exe > Sharphound.exe
+echo -e "\e[31mSharphound Download Complete\e[0m"
+
