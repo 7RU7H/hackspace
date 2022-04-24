@@ -80,5 +80,6 @@ echo -e "\e[31mSysinterals Download Complete\e[0m"
 cd ../../Bloodhound;
 echo -e "\e[31mDownloading Sharphound for Bloodhound\e[0m"
 curl -L https://github.com/BloodHoundAD/BloodHound/raw/master/Collectors/SharpHound.exe > Sharphound.exe
+curl "https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Collectors/AzureHound.ps1" -Lo AzureHound.ps1
 echo -e "\e[31mSharphound Download Complete\e[0m"
 
