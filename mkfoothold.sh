@@ -43,6 +43,7 @@ echo -e "\e[31mCloning Linux Post-Exploitation tools Complete\e[0m"
 cd ../../Windows/Binaries;
 echo -e "\e[31mCloning Windows Binaries Started\e[0m"
 git clone https://github.com/r3motecontrol/unix-privesc-check.git
+git clone https://github.com/int0x33/nc.exe.git
 wait
 echo -e "\e[31mCloning Windows Binaries Complete\e[0m"
 cd ../Enumeration;
@@ -82,4 +83,5 @@ echo -e "\e[31mDownloading Sharphound for Bloodhound\e[0m"
 curl -L https://github.com/BloodHoundAD/BloodHound/raw/master/Collectors/SharpHound.exe > Sharphound.exe
 curl "https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Collectors/AzureHound.ps1" -Lo AzureHound.ps1
 echo -e "\e[31mSharphound Download Complete\e[0m"
+
 
