@@ -52,6 +52,7 @@ git clone https://github.com/hausec/ADAPE-Script.git
 git clone https://github.com/Tib3rius/windowsprivchecker.git
 git clone https://github.com/bitsadmin/wesng --depth 1
 git clone https://github.com/411Hall/JAWS.git
+git clone https://github.com/itm4n/PrivescCheck.git
 wait
 echo -e "\e[31mCloning Windows Enumeration scripts complete\e[0m"
 cd ../Exploits;
