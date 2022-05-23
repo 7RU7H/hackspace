@@ -54,6 +54,7 @@ git clone https://github.com/bitsadmin/wesng --depth 1
 git clone https://github.com/411Hall/JAWS.git
 git clone https://github.com/itm4n/PrivescCheck.git
 git clone https://github.com/AonCyberLabs/Windows-Exploit-Suggester.git
+git clone https://github.com/rasta-mouse/Sherlock.git
 wait
 echo -e "\e[31mCloning Windows Enumeration scripts complete\e[0m"
 cd ../Exploits;
