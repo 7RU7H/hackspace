@@ -2,7 +2,7 @@
 # Foothold.sh is nice workspace script to clone all binaries, enumeration scripts, frameworks and post-exploitation scripts
 
 mkdir Foothold/ ; cd Foothold/
-mkdir Windows && mkdir Linux && mkdir Bloodhound
+mkdir Windows && mkdir Linux && mkdir Bloodhound && mkdir Socat
 mkdir Linux/Binaries && mkdir Linux/Enumeration && mkdir Linux/Exploits && mkdir Linux/Frameworks && mkdir Linux/Post-Exploitation
 mkdir Windows/Binaries && mkdir Windows/Enumeration && mkdir Windows/Exploits && mkdir Windows/Frameworks && mkdir Windows/Post-Exploitation && mkdir Windows/Sysinternals
 echo -e "\e[31mCloning PEASS-NG Started\e[0m"
@@ -11,7 +11,6 @@ wait
 echo -e "\e[31mCloning PEASS-NG Complete\e[0m"
 cd Linux/Binaries;
 echo -e "\e[31mCloning Linux Binaries Started\e[0m"
-git clone https://github.com/andrew-d/static-binaries.git
 mkdir pspy
 curl -L https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy32 > pspy/pspy32
 curl -L https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy32s > pspy/pspy32s
@@ -26,6 +25,7 @@ git clone https://github.com/rebootuser/LinEnum.git
 git clone https://github.com/mzet-/linux-exploit-suggester
 git clone https://github.com/diego-treitos/linux-smart-enumeration
 git clone https://github.com/pentestmonkey/unix-privesc-check.git
+https://github.com/jondonas/linux-exploit-suggester-2.git
 wait
 echo -e "\e[31mCloning Enumeration Scripts Complete[\e0m"
 cd ../Exploits;
@@ -55,6 +55,7 @@ git clone https://github.com/411Hall/JAWS.git
 git clone https://github.com/itm4n/PrivescCheck.git
 git clone https://github.com/AonCyberLabs/Windows-Exploit-Suggester.git
 git clone https://github.com/rasta-mouse/Sherlock.git
+git https://github.com/rasta-mouse/Watson.git
 wait
 echo -e "\e[31mCloning Windows Enumeration scripts complete\e[0m"
 cd ../Exploits;
@@ -85,6 +86,18 @@ cd ../../Bloodhound;
 echo -e "\e[31mDownloading Sharphound for Bloodhound\e[0m"
 curl -L https://github.com/BloodHoundAD/BloodHound/raw/master/Collectors/SharpHound.exe > Sharphound.exe
 curl "https://raw.githubusercontent.com/BloodHoundAD/BloodHound/master/Collectors/AzureHound.ps1" -Lo AzureHound.ps1
+wait
 echo -e "\e[31mSharphound Download Complete\e[0m"
-
-
+cd ../
+echo -e "\e[31mDownloading Static binaries\e[0m"
+git clone https://github.com/andrew-d/static-binaries.git
+wait
+echo -e "\e[31mStatic Binaries Download Complete\e[0m"
+cd Socat/
+echo -e "\e[31mDownloading Socat binaries\e[0m"
+curl -L https://github.com/3ndG4me/socat/releases/download/v1.7.3.3/socatx64.bin > socatx64.bin
+curl -L https://github.com/3ndG4me/socat/releases/download/v1.7.3.3/socatx64.exe > socatx64.exe
+curl -L https://github.com/3ndG4me/socat/releases/download/v1.7.3.3/socatx86.bin > socatx86.bin
+curl -L https://github.com/3ndG4me/socat/releases/download/v1.7.3.3/socatx86.exe > socatx86.exe
+wait
+echo -e "\e[31m Socat binaries Download Complete\e[0m"
