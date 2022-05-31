@@ -53,7 +53,6 @@ git clone https://github.com/Tib3rius/windowsprivchecker.git
 git clone https://github.com/bitsadmin/wesng --depth 1
 git clone https://github.com/411Hall/JAWS.git
 git clone https://github.com/itm4n/PrivescCheck.git
-git clone https://github.com/AonCyberLabs/Windows-Exploit-Suggester.git
 git clone https://github.com/rasta-mouse/Sherlock.git
 git https://github.com/rasta-mouse/Watson.git
 wait
