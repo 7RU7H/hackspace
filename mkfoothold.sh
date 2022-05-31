@@ -19,7 +19,7 @@ curl -L https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64s 
 wait
 echo -e "\e[31mCloning Linux Binaries Complete\e[0m"
 cd ../Enumeration;
-echo -e "\e[31mCloning Enumeration Scripts Started[\e0m"
+echo -e "\e[31mCloning Enumeration Scripts Started\e[0m"
 git clone https://github.com/Tib3rius/linuxprivchecker.git
 git clone https://github.com/rebootuser/LinEnum.git
 git clone https://github.com/mzet-/linux-exploit-suggester
@@ -27,7 +27,7 @@ git clone https://github.com/diego-treitos/linux-smart-enumeration
 git clone https://github.com/pentestmonkey/unix-privesc-check.git
 https://github.com/jondonas/linux-exploit-suggester-2.git
 wait
-echo -e "\e[31mCloning Enumeration Scripts Complete[\e0m"
+echo -e "\e[31mCloning Enumeration Scripts Complete\e[0m"
 cd ../Exploits;
 echo -e "\e[31mCloning Linux Exploits Started\e[0m"
 wait
