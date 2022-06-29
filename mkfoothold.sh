@@ -1,5 +1,5 @@
 #!/bin/bash
-# Foothold.sh is nice workspace script to clone all binaries, enumeration scripts, frameworks and post-exploitation scripts
+# Foothold.sh is nice workspace script to curl/clone all binaries, enumeration scripts, frameworks and post-exploitation scripts
 
 mkdir Foothold/ ; cd Foothold/
 mkdir Windows && mkdir Linux && mkdir Bloodhound && mkdir Socat
@@ -54,7 +54,8 @@ git clone https://github.com/bitsadmin/wesng --depth 1
 git clone https://github.com/411Hall/JAWS.git
 git clone https://github.com/itm4n/PrivescCheck.git
 git clone https://github.com/rasta-mouse/Sherlock.git
-git https://github.com/rasta-mouse/Watson.git
+git clone https://github.com/rasta-mouse/Watson.git
+git clone https://github.com/pentestmonkey/windows-privesc-check
 wait
 echo -e "\e[31mCloning Windows Enumeration scripts complete\e[0m"
 cd ../Exploits;
