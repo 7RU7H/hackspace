@@ -68,8 +68,8 @@ echo -e "\e[31mCloning Windows Exploits Complete\e[0m"
 cd ../Frameworks;
 echo -e "\e[31mCloning Windows Frameworks Started\e[0m"
 git clone https://github.com/samratashok/nishang
-git clone https://github.com/PowerShellMafia/PowerSploit.git
-curl -L https://github.com/PowerShellMafia/PowerSploit/archive/refs/tags/v3.0.0.zip > Powersploit.zip
+git clone https://github.com/PowerShellMafia/PowerSploit.git -b dev
+curl -L https://github.com/PowerShellMafia/PowerSploit/archive/refs/tags/v.0.0.zip > Powersploit.zip
 wait
 echo -e "\e[31mCloning Windows Frameworks Complete\e[0m"
 cd ../Post-Exploitation;
