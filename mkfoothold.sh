@@ -48,7 +48,7 @@ wait
 echo -e "\e[31mCloning Windows Binaries Complete\e[0m"
 cd ../Enumeration;
 echo -e "\e[31mCloning Windows Enumeration scripts Started\e[0m"
-git clone https://github.com/hausec/ADAPE-Script.git
+git cleon https://github.com/7RU7H/ADAPE-Script.git
 git clone https://github.com/Tib3rius/windowsprivchecker.git
 git clone https://github.com/bitsadmin/wesng --depth 1
 git clone https://github.com/411Hall/JAWS.git
